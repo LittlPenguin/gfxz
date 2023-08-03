@@ -1,6 +1,8 @@
 $(() => {
     $('.qcgz').click(() => {
         localStorage.removeItem('xzjs')
+        $('.jiesuanan').click()
+
     })
     $('.jiesuanan').click(() => {
         var dqgz = $('#gs').val() * $('#zgfyuan').val()
@@ -9,4 +11,5 @@ $(() => {
         $('.zqxz').children('span').text(zgys)
         localStorage.setItem('xzjs', zgys)
     })
+    $('.jiesuanan').click()
 })
